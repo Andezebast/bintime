@@ -78,7 +78,7 @@ const TableNews: FC<ITableNewsProps> = ({selectFilter, textFilter}) => {
     }
     if(error){
         return (
-            <Box>Error Bad Request</Box>
+            <Box sx={errorStyle}><Typography variant='h2'>Error Bad Request</Typography></Box>
         )
     }
     return (
@@ -122,5 +122,9 @@ const loading = {
     paddingTop: '50px',
     display: 'flex',
     justifyContent: 'center'
+}
+const errorStyle = {
+    paddingTop: '50px',
+    textAlign: 'center',
 }
 export default TableNews;
