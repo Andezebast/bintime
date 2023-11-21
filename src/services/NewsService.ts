@@ -7,11 +7,12 @@ export const newsApi = createApi({
     baseQuery: fetchBaseQuery({
        baseUrl: 'https://newsapi.org/v2'
     }),
+// /top-headlines?country=${data.country}&category=${data.category}&apiKey=264925e19da143ea9035bea17a499558
     tagTypes: ['News'],
     endpoints: (build) => ({
         getNews: build.query<INews, ISelectFilter>({
             query: (data) => ({
-               url: `/top-headlines?country=${data.country}&category=${data.category}&apiKey=264925e19da143ea9035bea17a499558`,
+               url: `/top-headlines?country=${data.country}&category=${data.category}&apiKey=c626c190777d4c27bf346b74c73c02d5`,
             }),
         })
     })
