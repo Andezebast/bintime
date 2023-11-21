@@ -2,16 +2,15 @@ import NewsPage from '../page/NewsPage';
 import ArticlePage from '../page/ArticlePage';
 
 const NewsPageRoutes = {
-    key: '/',
-    path: '/',
+    key: '/bintime',
+    path: '/bintime',
     component: NewsPage,
 }
 const ArticlePageRoutes = {
-    key: '/:id',
-    path: `/:id`,
+    key: '/bintime/:id',
+    path: '/bintime/:id',
     component: ArticlePage,
 }
-
 export const routes = [
     NewsPageRoutes,
     ArticlePageRoutes

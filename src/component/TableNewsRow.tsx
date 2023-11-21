@@ -27,7 +27,7 @@ const TableNewsRow:FC<TableNewsRowProps> = ({article, columns, index}) => {
     const handleEventLink = (article: IArticles, index: number) => {
         dispatch(ArticleSlice.actions.articleAdd(article))
         dispatch(ArticleSlice.actions.indexAdd(index))
-        navigate(`/${articleIndex}`);
+        navigate(`/bintime/${articleIndex}`);
     }
     /*----------------------------------*/
     return (

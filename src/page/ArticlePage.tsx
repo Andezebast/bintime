@@ -11,7 +11,7 @@ const ArticlePage: FC = () => {
     console.log(article, 'article')
     /*----------------------------------*/
     const handleEventBack = () => {
-        navigate(`/`);
+        navigate(`/bintime`);
     }
     /*----------------------------------*/
     return (
